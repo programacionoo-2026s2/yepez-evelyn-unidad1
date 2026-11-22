@@ -1,0 +1,3 @@
+## 2026-11-22 — 04-taller1: FizzBuzz con switch sin condición
+- Avance: Se creó el módulo taller1 en 04-taller1 con main.go y README.md, recorriendo los números del 1 al 30 con un bucle for y usando un switch sin condición (con contadores fizz, buzz y fizzbuzz), verificando con gofmt y go vet y realizando el experimento del orden de los case.
+- Aprendizaje / detalle: Al evaluar del 1 al 30, el orden de los case importa porque Go ejecuta la primera condición verdadera y aplica break implícito: poner i%15 == 0 antes que i%3 == 0 da Fizz=8 Buzz=4 FizzBuzz=2, mientras que poner i%3 == 0 antes hace que 15 y 30 entren en Fizz y FizzBuzz quede en 0.
